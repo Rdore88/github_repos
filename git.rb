@@ -10,5 +10,4 @@ attr_reader :username
   def get_repo
     HTTParty.get("https://api.github.com/users/#{username}/repos")
   end
-
 end

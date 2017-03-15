@@ -9,5 +9,6 @@ require "pry"
 
   post "/repos" do
     username = params["username"]
-    body(GitApp.new(username).get_repo).to_json
+    @repos = GitApp.new(username).get_repo
+    erb :"repos.html"
   end
