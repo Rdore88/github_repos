@@ -1,0 +1,54 @@
+a:link {
+  text-decoration: none;
+}
+
+.top_nav p {
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: left;
+  color: white;
+  background-color: black;
+}
+
+  nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 75px;
+  float: left;
+  word-spacing: 50px;
+
+}
+
+.avatar {
+  float: left;
+  width: 175px;
+  height: 175px;
+}
+
+ul {
+  float: left;
+  padding-bottom: 20px;
+  position: relative;
+  margin-left: 25px;
+  margin-right: 150px;
+}
+
+footer {
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ padding-top: 50px;
+ text-align: center;
+ font-size: 15px;
+}
+
+.cat {
+  width: 20px;
+  height: 20px;
+}
