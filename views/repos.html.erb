@@ -3,8 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title><%= @repos[0]["owner"]["login"] %></title>
+    <link rel="stylesheet" href="/git_styles.css">
   </head>
   <body>
-
+    <img class="avatar" src = "<%= @repos[0]["owner"]["avatar_url"] %>">
+    <header class="top_nav">
+      <form action="" method="post">
+        <input type="text" name="search" value="">
+        <input type="submit" name="" value="Search github">
+      </form>
+      <p>Pull Requests</p>
+      <p>Issues</p>
+      <p>Pull Gists</p>
+    </header>
+    <nav>
+      <p><a href="<%= @repos[0]["owner"]["html_url:"] %>">Overview</a></p>
+      <p><a href="<%= @repos[0]["owner"]["repos_url:"] %>">Repositories</a></p>
+      <p><a href="<%= @repos[0]["owner"]["starred_url:"] %>">Stars</a></p>
+      <p><a href="<%= @repos[0]["owner"]["followers_url:"] %>">Followers</a></p>
+      <p><a href="<%= @repos[0]["owner"]["following_url:"] %>">Following</a></p>
+    </nav>
+    <ul>
+      <p><a href="<%= @repos[0]["html_url:"] %>"><%= @repos[0]["name"] %></a></p>
+      <p><a href="<%= @repos[1]["html_url:"] %>"><%= @repos[1]["name"] %></a></p>
+      <p><a href="<%= @repos[2]["html_url:"] %>"><%= @repos[2]["name"] %></a></p>
+      <p><a href="<%= @repos[3]["html_url:"] %>"><%= @repos[3]["name"] %></a></p>
+      <p><a href="<%= @repos[4]["html_url:"] %>"><%= @repos[4]["name"] %></a></p>
+      <p><a href="<%= @repos[5]["html_url:"] %>"><%= @repos[5]["name"] %></a></p>
+      <p><a href="<%= @repos[6]["html_url:"] %>"><%= @repos[6]["name"] %></a></p>
+      <p><a href="<%= @repos[7]["html_url:"] %>"><%= @repos[7]["name"] %></a></p>
+      <p><a href="<%= @repos[8]["html_url:"] %>"><%= @repos[8]["name"] %></a></p>
+      <p><a href="<%= @repos[9]["html_url:"] %>"><%= @repos[9]["name"] %></a></p>
+      <p><a href="<%= @repos[10]["html_url:"] %>"><%= @repos[10]["name"] %></a></p>
+      <p><a href="<%= @repos[11]["html_url:"] %>"><%= @repos[11]["name"] %></a></p>
+      <p><a href="<%= @repos[12]["html_url:"] %>"><%= @repos[12]["name"] %></a></p>
+      <p><a href="<%= @repos[13]["html_url:"] %>"><%= @repos[13]["name"] %></a></p>
+      <p><a href="<%= @repos[14]["html_url:"] %>"><%= @repos[14]["name"] %></a></p>
+    </ul>
+    <footer>
+      <a href="https://help.github.com/articles/github-terms-of-service/">Terms</a>
+      <a href="https://help.github.com/articles/github-privacy-statement/">Privacy</a>
+      <a href="https://help.github.com/articles/github-security/">Security</a>
+      <a href="https://status.github.com/">Status</a>
+      <a href="https://help.github.com/">Help</a>
+      <img class="cat" src="https://octodex.github.com/images/stormtroopocat.png">
+    </footer>
   </body>
 </html>
